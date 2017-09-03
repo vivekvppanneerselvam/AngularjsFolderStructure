@@ -1,0 +1,79 @@
+<div class="container-fluid">
+	<div class="row">
+	<div class="card col-md-12">
+		<div class="card-toolbar">
+			<span class="card-title">Tasks</span>
+		</div>
+		<div class="card-content">
+			<div class="row">
+				<div class="col-md-7">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h3 class="panel-title">My Team Tasks</h3>
+						</div>
+						<div class="panel-body">
+							<div class="row radio-container">
+								<div class="col-md-12">
+									<button type="button" class="button primary md pull-right"
+										data-ng-click="taskCtrl.claimTask()" data-ng-disabled="!taskCtrl.selectedTeamTask">Claim Task</button>
+								</div>
+								<div class="col-md-12"  data-ng-repeat="task in taskCtrl.teamTasks">
+									<input type="radio" id="{{'teamTask_'+task.taskId}}" name="teamTaskGroup" data-ng-model="taskCtrl.selectedTeamTask" 
+										title="{{task.taskName}}" value="{{task.taskId}}" /> <label
+										for="{{'teamTask_'+task.taskId}}"><span><span></span></span>{{task.taskName}}</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h3 class="panel-title">My Tasks</h3>
+						</div>
+						<div class="panel-body">
+							<div class="row radio-container">
+								<div class="col-md-12">
+									<button type="button" class="button primary md pull-right"
+										data-ng-click="taskCtrl.openTask()" data-ng-disabled="!taskCtrl.selectedMyTask">Open Task</button>
+								</div>
+								<div class="col-md-12" data-ng-repeat="task in taskCtrl.myTasks">
+									<input type="radio" id="{{'myTask_'+task.taskId}}" name="myTaskGroup" data-ng-model="taskCtrl.selectedMyTask" 
+										title="{{task.taskName}}" value="{{task.taskId}}" /> <label
+										for="{{'myTask_'+task.taskId}}"><span><span></span></span>{{task.taskName}}</label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-5">
+					<div class="tab-nav">
+					    <div class="tab">
+					        <input class="tab-link" id="launchTab" type="radio" name="tabs" checked>
+					        <label for="launchTab">Launch</label>
+					        <div class="tab-content" id="launchContent">
+					            <a class="button tertiary" href="#/"><i class="icon_settings"></i>&nbsp; HDE OffBoardProcess</a>
+					            <a class="button tertiary" href="#/"><i class="icon_settings"></i>&nbsp; HDE Support Staff Level OnBoarding</a>
+					            <a class="button tertiary" href="#/"><i class="icon_settings"></i>&nbsp; HDI OffBoardProcess</a>
+					            <a class="button tertiary" href="#/onboarding"><i class="icon_settings"></i>&nbsp; HDI Support Staff Level OnBoarding</a>
+					        </div>
+					    </div>
+					    <div class="tab">
+					        <input class="tab-link" id="followingTab" type="radio" name="tabs">
+					        <label for="followingTab">Following</label>
+					        <div class="tab-content" id="followingContent">
+					            <h3>Following details</h3>
+					        </div>
+					    </div>
+					    <div class="tab">
+					        <input class="tab-link" id="mentionsTab" type="radio" name="tabs">
+					        <label for="mentionsTab">@Mentions</label>
+					        <div class="tab-content" id="mentionsContent">
+					            <h3>Mentions details</h3>
+					        </div>
+					    </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+</div>

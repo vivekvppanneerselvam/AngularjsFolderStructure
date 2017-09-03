@@ -1,0 +1,268 @@
+<div class="container-fluid">
+<div class="row">
+	<div class="card col-md-12">
+		<div class="card-toolbar">
+			<span class="card-title">Background Verification</span>
+		</div>
+		<div class="card-content">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h3 class="panel-title">Instructions</h3>
+						</div>
+						<div class="panel-body">
+							<div class="row">
+								<div class="col-md-12">
+									<p><label>Please enter background check and drug test status and submit.</label></p>
+									<p><label>Use ADHOC UPDATE TASK to modify the Original Request information. To learn more about the ADHOC updates please Click <a href="#">HERE.</a></label></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h3 class="panel-title">Request Information</h3>
+						</div>
+						<div class="panel-body">
+							<div class="row">
+								<div class="col-md-5">
+									<div class="text-input-container col-md-3">
+								        <input type="text" id="requestId" name="requestId" data-ng-model="bgvCtrl.reqId" title="Request Id" disabled/>
+								        <label for="requestId">Request ID</label>
+									</div>
+								</div>
+								<div class="col-md-5">
+									<div class="text-input-container">
+								        <input type="text" id="branchName" name="branchName" data-ng-model="bgvCtrl.branchName" title="Branch Name" disabled/>
+								        <label for="branchName">Branch Name</label>
+									</div>
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-md-5">
+									<div class="text-input-container ">
+								        <input type="text" id="requesterNm" name="requesterNm" data-ng-model="bgvCtrl.requesterName" title="Requester Name" disabled/>
+								        <label for="requesterNm">Requester Name</label>
+									</div>
+								</div>
+								<div class="col-md-5">
+									<div class="text-input-container">
+								        <input type="text" id="branchNumber" name="branchNumber" data-ng-model="bgvCtrl.branchNumber" title="Branch Number" disabled/>
+								        <label for="branchNumber">Branch Number</label>
+									</div>
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-md-5">
+									<div class="text-input-container ">
+								        <input type="text" id="requesterEmail" name="requesterEmail" data-ng-model="bgvCtrl.requesterMail" title="Requester Email" disabled/>
+								        <label for="requesterEmail">Requester Email:</label>
+									</div>
+								</div>
+								<div class="col-md-5">
+									<div class="text-input-container">
+								        <input type="text" id="isCoord" name="isCoord" data-ng-model="bgvCtrl.isCoord" title="Is Coord" disabled/>
+								        <label for="isCoord">IS &Training &Device Coordinator:</label>
+									</div>
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-md-5">
+									<div class="text-input-container ">
+								        <input type="text" id="candJobTitle" name="candJobTitle" data-ng-model="bgvCtrl.candJobTitle" title="Cand. Job Title" disabled/>
+								        <label for="candJobTitle">Candidate Job Title:</label>
+									</div>
+								</div>
+								<div class="col-md-5">
+									<div class="text-input-container">
+								        <input type="text" id="hireManager" name="hireManager" data-ng-model="bgvCtrl.hireManger" title="Hire Manager/ASDS" disabled/>
+								        <label for="hireManager">Hiring Manager / ASDS:</label>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-5">
+									<div class="text-input-container ">
+								        <input type="text" id="hireType" name="hireTyp" data-ng-model="bgvCtrl.hireType" title="Hire Type" disabled/>
+								        <label for="hireType">Hiring Type:</label>
+									</div>
+								</div>
+								<div class="col-md-5">
+									<div class="text-input-container">
+								        <input type="text" id="transFrom" name="transFrom" data-ng-model="bgvCtrl.transFrom" title="Transfered From" disabled/>
+								        <label for="transFrom">If Transfer Transfered from:</label>
+									</div>
+								</div>
+							</div>
+							
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h3 class="panel-title">Candidate Information</h3>
+						</div>
+						<div class="panel-body">
+							<div class="row">
+								<div class="col-md-4">
+									<div class="text-input-container col-md-3">
+								        <input type="text" id="candFname" name="candFname" data-ng-model="bgvCtrl.candFname" title="First Name" disabled/>
+								        <label for="candFname">First Name:</label>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="text-input-container col-md-4">
+								        <input type="text" id="candMname" name="candMname" data-ng-model="bgvCtrl.candMname" title="Middle Name" disabled/>
+								        <label for="candMname">Middle Name:</label>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="text-input-container col-md-3">
+								        <input type="text" id="candLname" name="candLname" data-ng-model="bgvCtrl.candLname" title="Last Name" disabled/>
+								        <label for="candLname">Last Name:</label>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-5">
+									<div class="text-input-container">
+								        <input type="text" id="candAmer" name="candAmer" data-ng-model="bgvCtrl.candAmer" title="Candidate AmerID" disabled/>
+								        <label for="candAmer">Candidate AmerID:</label>
+									</div>
+								</div>
+								<div class="col-md-5">
+									<div class="picker-div">
+								        <form name="joiningDateForm">
+											<label>Joining Date</label>
+											<date-picker format="bgvCtrl.dateFormat" selected-date="bgvCtrl.joinDt" name="joiningDate"></date-picker>
+											<span class="date-picker-error" data-ng-if="joiningDateForm.joiningDate.$invalid">Invalid Date</span>
+										</form>
+								   </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h3 class="panel-title">Need Termination</h3>
+						</div>
+						<div class="panel-body">
+							<div class="row">
+								<div class="col-md-5">
+								<div class="input-container">
+								 <label for="termCandHire">Terminate Candidate Hiring:</label>
+								 </div>
+									<div class="radio-container">
+								        <input checked type="radio" data-ng-model= "bgvCtrl.termHireCand" id="yes" name="rgroup1" title="Default Radio 1" value="yes" />
+								        <label for="yes" selected><span><span></span></span>Yes</label>
+								        <input checked type="radio" id="yes" name="rgroup1" title="Default Radio 2" value="no" />
+								        <label for="no"><span><span></span></span>No</label>
+								    </div>
+								</div>
+								<div class="col-md-5">
+									<div class="select-container" data-ng-class="{'error': bgvCtrl.rsnNtTermcandErr}">
+										        <select id="rsnNtTermcand" name="rsnNtTermcand" data-ng-model="bgvCtrl.rsnNtTermcand" title="">
+										            <option value="0" selected="selected">Select</option>
+													<option value="Met Criteria">Met Criteria</option>
+										        </select>
+										        <label for="rsnNtTermcand">Reason for Not Terminating Candidate : </label>
+										        <p class="error-msg" data-ng-if="bgvCtrl.rsnNtTermcandErr}">Please Select Reason for Not Terminating Candidate</p>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h3 class="panel-title">Drug Expiration</h3>
+						</div>
+						<div class="panel-body">
+							<div class="row">
+								<div class="col-md-10">
+									<div class="select-container" >
+										        <select id="drugExpDate" name="drugExpDate" data-ng-model="bgvCtrl.drugExpDate" title="">
+										            <option value="0" selected="selected">Select Expiration Date</option>
+													<option value="Met Criteria">12-12-2016</option>
+										        </select>
+										        <label for="drugExpDate">Drug Test Expiration Date (System Generated based
+												on Drug test Taken Date) : </label>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="row">
+				<div class="col-md-12">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h3 class="panel-title">Background Verification</h3>
+						</div>
+						<div class="panel-body">
+							<div class="row">
+								<div class="col-md-5">
+									<div class="picker-div">
+								        <form name="olwDateForm">
+											<label>Date OLW Recieved</label>
+											<date-picker format="bgvCtrl.dateFormat" selected-date="bgvCtrl.olwDt" name="olwDate"></date-picker>
+											<span class="date-picker-error" data-ng-if="olwDateForm.olwDate.$invalid">Invalid Date</span>
+										</form>
+								   </div>
+								</div>
+								<div class="col-md-5">
+									<div class="select-container">
+										        <select id="hireType" name="hireType" data-ng-model="bgvCtrl.hireType" title="">
+										            <option value="0" selected="selected">Select Hire Type</option>
+													<option value=""></option>
+										        </select>
+										        <label for="typeHire">Type of Hire : </label>
+									</div>
+								</div>
+								<button class="button primary md" data-ng-click="bgvCtrl.testResult()">Verify/Add requied Test Results</button>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-right">
+					<button class="button primary md" data-ng-click="bgvCtrl.submitRequest()">Submit Request</button>
+					&nbsp;&nbsp;
+					<button class="button md" data-ng-click="bgvCtrl.cancelRequest()">Cancel Request</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>

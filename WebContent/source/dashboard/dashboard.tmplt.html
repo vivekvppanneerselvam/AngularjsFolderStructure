@@ -1,0 +1,59 @@
+<div class="container-fluid">
+<div class="row">
+	<div class="card col-md-12">
+		<div class="card-toolbar">
+			<span class="card-title">Tracking Projects</span>
+		</div>
+		<div class="card-content">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="col-md-4 text-center">
+						<div class="select-container">
+							<select id="projectList" name="projectList"
+								data-ng-model="dshbrdCtrl.selectedProject" title="Project" data-ng-change="dshbrdCtrl.selectedProjectValue(dshbrdCtrl.selectedProject);">
+								<option value="default" selected>Select</option>
+								<option  value="{{project.projectName}}" data-ng-repeat="project in dshbrdCtrl.projects" >{{project.projectName}}</option>
+							</select> <label for="projectList">Projects</label>
+						</div>
+					</div>
+					<!-- <button class="button md" data-ng-click="dshbrdCtrl.reset()">Reset</button> -->
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12" style="text-align:right;">
+					<button data-ng-click="dshbrdCtrl.toggle()" class="button primary md" data-ng-disabled="dshbrdCtrl.buttonToggle">{{dshbrdCtrl.toggleView}}</button>
+				</div>
+			</div>
+			<hr>
+			<div class ="row" data-ng-show="dshbrdCtrl.gridEnable">
+			<div id= "uiGrid" ui-grid="dshbrdCtrl.gridOptions" class="grid"></div>
+			</div>
+			<div class="row" data-ng-show="dshbrdCtrl.pieChartEnable">
+				<div class="col-md-4"></div>
+				<div class="col-md-4">
+				<canvas id="pie" class="chart chart-pie" chart-data="dshbrdCtrl.data" chart-labels="dshbrdCtrl.labels" chart-options="options"  chart-colors="dshbrdCtrl.colors" style="height:50%;width:50%"></canvas>
+				</div>
+				<div class="col-md-4" style="padding-bottom:0%">
+				<div class="row">
+				<div class="col-md-2">
+				<div class="box lightOrange" style="background:#ff9933;"></div>
+				</div>
+				<div class="col-md-10">
+				<label>Automated</label>
+				</div>
+				</div>
+				<div class="row">
+				<div class="col-md-2">
+				<div class="box darkOrange" style="background:#ff6600;"></div>
+				</div>
+				<div class="col-md-10">
+				<label>UnAutomated</label>
+				</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+</div>
+</div>
+

@@ -1,0 +1,150 @@
+<div class="container-fluid">
+<div class="row">
+	<div class="card col-md-12">
+		<div class="card-toolbar">
+			<span class="card-title">Onboarding</span>
+		</div>
+		<div class="card-content">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h3 class="panel-title">Instructions</h3>
+						</div>
+						<div class="panel-body">
+							<div class="row">
+								<div class="col-md-12">
+									<p><label>For Non SC please submit background check by <a href="#">Clicking Here.</a></label></p>
+									<p><label>For Non SC please submit drug test by <a href="#">Clicking Here.</a></label></p>
+									<p><label>Please fax the documents to Payroll for paperwork verification.</label></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h3 class="panel-title">Branch Information</h3>
+						</div>
+						<div class="panel-body">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="select-container" data-ng-class="{'error': onBrdngCtrl.hirePosTitleErr}">
+								        <select id="newHirePositionTitle" name="newHirePositionTitle" data-ng-model="onBrdngCtrl.hirePosTitle" title="New Hire Position Title">
+								            <option value="0" selected="selected">Select</option>
+											<option value="Installation Manager">Installation Manager</option>
+								        </select>
+								        <label for="newHirePositionTitle">New Hire Position Title</label>
+								        <p class="error-msg" data-ng-if="onBrdngCtrl.hirePosTitleErr">Please Select New Hire Position Title</p>
+								    </div>
+								</div>
+								<div class="col-md-6">
+									<div class="select-container" data-ng-class="{'error': onBrdngCtrl.hireManagerErr}">
+								        <select id="selectHiringManager" name="selectHiringManager" data-ng-model="onBrdngCtrl.hireManager" title="Select Hiring Manager">
+								        	<option value="0" selected="selected">Select</option>
+								            <option value="Gerald Goodwin(BM)">Geralad Goodwin(BM)</option>
+								        </select>
+								        <label for="selectHiringManager">Select Hiring Manager</label>
+								        <p class="error-msg" data-ng-if="onBrdngCtrl.hireManagerErr">Please Select Hiring Manager</p>
+								    </div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="select-container" data-ng-class="{'error': onBrdngCtrl.candidateBrnchErr}">
+								        <select id="selectCandidateBranch" name="selectCandidateBranch" data-ng-model="onBrdngCtrl.candidateBrnch" title="Select Candidate`s Branch">
+								            <option value="0" selected="selected">Select</option>
+								            <option value="Atlanta South">Atlanta South</option>
+								        </select>
+								        <label for="selectCandidateBranch">Select Candidate`s Branch</label>
+								        <p class="error-msg" data-ng-if="onBrdngCtrl.candidateBrnchErr">Please Select Candidate`s Branch</p>
+								    </div>
+								</div>
+								<div class="col-md-6">
+									<div class="select-container" data-ng-class="{'error': onBrdngCtrl.businessGrpErr}">
+								        <select id="selectBusinessGroup" name="selectBusinessGroup" data-ng-model="onBrdngCtrl.businessGrp" title="Select Business Group">
+								            <option value="0" selected="selected">Select</option>
+								            <option value="HDI">HDI</option>
+								        </select>
+								        <label for="selectBusinessGroup">Select Business Group</label>
+								        <p class="error-msg" data-ng-if="onBrdngCtrl.businessGrpErr">Please Select Business Group</p>
+								    </div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="select-container" data-ng-class="{'error': onBrdngCtrl.traindeviceCordErr}">
+								        <select id="selectIsTrainingDeviceCoord" name="selectIsTrainingDeviceCoord" data-ng-model="onBrdngCtrl.traindeviceCord" title="Select IS &Training &Device Coordinator">
+								            <option value="0" selected="selected">Select</option>
+								            <option value="Gerald Goodwin(BM)">Geralad Goodwin(BM)</option>
+								        </select>
+								        <label for="selectIsTrainingDeviceCoord">Select IS &Training &Device Coordinator</label>
+								        <p class="error-msg" data-ng-if="onBrdngCtrl.traindeviceCordErr">Please Select IS &Training &Device Coordinator</p>
+								    </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h3 class="panel-title">Candidate Information</h3>
+						</div>
+						<div class="panel-body">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="text-input-container" data-ng-class="{'error': onBrdngCtrl.firstNmErr}">
+								        <input type="text" id="firstName" name="firstName" 
+								        	data-ng-model="onBrdngCtrl.firstNm" title="First Name" />
+								        <label for="firstName">First Name</label>
+								        <p class="error-msg" data-ng-if="onBrdngCtrl.firstNmErr">Please enter First Name</p>
+									</div>
+									<div class="text-input-container">
+										<input type="text" id="middleName" name="middleName" data-ng-model="onBrdngCtrl.middleNm" title="Middle Name" />
+								        <label for="middleName">Middle Name</label>
+									</div>
+									<div class="text-input-container" data-ng-class="{'error': onBrdngCtrl.lastNmErr}">
+										<input type="text" id="lastName" name="lastName" data-ng-model="onBrdngCtrl.lastNm" title="Last Name" />
+								        <label for="lastName">Last Name</label>
+								        <p class="error-msg" data-ng-if="onBrdngCtrl.lastNmErr">Please enter Last Name</p>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="picker-div">
+								        <form name="joiningDateForm">
+											<label>Joining Date</label>
+											<date-picker format="onBrdngCtrl.dateFormat" selected-date="onBrdngCtrl.joinDt" name="joiningDate"></date-picker>
+											<span class="date-picker-error" data-ng-if="joiningDateForm.joiningDate.$invalid">Invalid Date</span>
+										</form>
+								        
+									</div>
+									<div class="picker-div">
+										<form name="verbalOfficerDateForm">
+											<label>Verbal Officer Date</label>
+											<date-picker format="onBrdngCtrl.dateFormat" selected-date="onBrdngCtrl.verbOffDt" name="verbalOfficerDate"></date-picker>
+											<span class="date-picker-error" data-ng-if="verbalOfficerDateForm.verbalOfficerDate.$invalid">Invalid Date</span>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-right">
+					<button class="button primary md" data-ng-click="onBrdngCtrl.submitRequest()">Submit Request</button>
+					&nbsp;&nbsp;
+					<button class="button md" data-ng-click="onBrdngCtrl.cancelRequest()">Cancel Request</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>

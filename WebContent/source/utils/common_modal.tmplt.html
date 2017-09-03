@@ -1,0 +1,19 @@
+<div>
+	<div class="banner {{headerClass}}">
+	    <div class="text-wrapper">
+	        <span class="title">{{modalTitle}}</span>
+	        <span class="close"><i class="icon_close" data-ng-click="cancel()"></i></span>
+	    </div>
+	</div>
+	<div class="dialog-body">
+		<span class="standard-text">{{modalMsg}}</span>
+		<br data-ng-if="modalMsg2">
+		<span class="standard-text">{{modalMsg2}}</span>
+		<br data-ng-if="modalMsg3">
+		<span class="standard-text">{{modalMsg3}}</span>
+	</div>
+	<div class="modal-footer tac" style="background-color: white;">
+		<button class="button md primary" type="button" data-ng-click="ok()">{{primaryBtnTxt}}</button>
+		<button class="button md" type="button" data-ng-click="cancel()" data-ng-show="isReq">{{secondaryBtnTxt}}</button>
+	</div>
+</div>
